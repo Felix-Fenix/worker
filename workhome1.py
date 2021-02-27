@@ -48,11 +48,4 @@ if __name__ == '__main__':
         if ter > 0:
             print('Прибыль фирмы в расчете на одного сотрудника составляет:' + str(staffProf))
     # 6 зад
-start1 = int(input('Сколько км в первый день?'))
-finish = int(input('Сколько км в день надо делать?'))
-days = 1
-while start1 <= finish:
-    print('На ',days,' день, количество км составит :',float('{:.2f}'.format(start1)))
-    start1 += start1/100*10
-    days += 1
-print('На ',days,' день, количество км составит :',float('{:.2f}'.format(start1)))
+"""А здесь что то новое"""
