@@ -49,3 +49,30 @@ if __name__ == '__main__':
             print('Прибыль фирмы в расчете на одного сотрудника составляет:' + str(staffProf))
     # 6 зад
 """А здесь что то новое"""
+
+
+
+d = '1-10-2011'
+date2 = Date.from_string(d)
+is_date = Date.is_date_valid(d)
+
+
+
+class DivisionByNull:
+    def __init__(self, divider, denominator):
+        self.divider = divider
+        self.denominator = denominator
+
+    @staticmethod
+    def divide_by_null(divider, denominator):
+        try:
+            return (divider / denominator)
+        except:
+            return (f"Деление на ноль недопустимо")
+
+
+div = DivisionByNull(10, 100)
+print(DivisionByNull.divide_by_null(10, 0))
+print(DivisionByNull.divide_by_null(10, 0.1))
+print(div.divide_by_null(100, 0))
+# ------------------------
